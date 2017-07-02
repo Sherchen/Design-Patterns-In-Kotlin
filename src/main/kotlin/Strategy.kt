@@ -2,7 +2,9 @@ class Printer(val stringFormatterStrategy: (String) -> String) {
     fun printString(string: String) = println(stringFormatterStrategy.invoke(string))
 }
 
+//通过闭包方式创建formatter
 val lowerCaseFormatter: (String) -> String = { it.toLowerCase() }
+
 
 val upperCaseFormatter = { it: String -> it.toUpperCase() }
 

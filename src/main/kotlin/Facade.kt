@@ -19,7 +19,7 @@ class ComplexSystemStore(val filePath: String) {
 
 data class User(val login: String)
 
-//Facade:
+//Facade: 外观模式
 class UserRepository {
     val systemPreferences = ComplexSystemStore("/data/default.prefs")
 

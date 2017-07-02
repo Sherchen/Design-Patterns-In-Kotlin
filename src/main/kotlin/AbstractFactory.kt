@@ -9,6 +9,7 @@ class ApplePlant : Plant
 abstract class PlantFactory {
     abstract fun makePlant(): Plant
 
+    //使用companion object作为单例模式使用
     companion object {
         inline fun <reified T : Plant> createFactory(): PlantFactory = when (T::class) {
             OrangePlant::class -> OrangeFactory()

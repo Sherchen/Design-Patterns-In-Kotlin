@@ -22,7 +22,7 @@ class Dialog() {
     fun show() = println("showing dialog $this")
 }
 
-//Builder:
+//Builder: 模仿android的dialog
 class DialogBuilder() {
     constructor(init: DialogBuilder.() -> Unit) : this() {
         init()

@@ -14,6 +14,7 @@ class SupportContract(val costPerMonth: Long) : ReportVisitable {
     override fun accept(visitor: ReportVisitor) = visitor.visit(this)
 }
 
+//实现观察者模式
 interface ReportVisitor {
     fun visit(contract: FixedPriceContract)
     fun visit(contract: TimeAndMaterialsContract)

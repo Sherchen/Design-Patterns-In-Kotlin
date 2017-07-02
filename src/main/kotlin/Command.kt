@@ -4,6 +4,7 @@ interface OrderCommand {
     fun execute()
 }
 
+//这里也涉及到了组合模式
 class OrderAddCommand(val id: Long) : OrderCommand {
     override fun execute() = println("adding order with id: $id")
 }

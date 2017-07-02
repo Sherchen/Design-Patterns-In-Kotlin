@@ -9,7 +9,8 @@ class NormalCoffeeMachine : CoffeeMachine {
     override fun makeLargeCoffee() = println("Normal: Making large coffee")
 }
 
-//Decorator:
+//使用装饰者模式。
+//Decorator: 使用coffeeMachine代理实现CoffeeMachine接口
 class EnhancedCoffeeMachine(val coffeeMachine: CoffeeMachine) : CoffeeMachine by coffeeMachine {
 
     // overriding behaviour

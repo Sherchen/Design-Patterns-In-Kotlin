@@ -8,6 +8,6 @@ object PrinterDriver {
 
 fun main(args: Array<String>) {
     println("Start")
-    PrinterDriver.print()
-    PrinterDriver.print()
+    PrinterDriver.print()//第一次会调用init方法
+    PrinterDriver.print()//使用object方式实现singleton模式
 }

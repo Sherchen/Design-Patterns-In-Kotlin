@@ -8,6 +8,7 @@ sealed class AuthorizationState {
     class Authorized(val userName: String) : AuthorizationState()
 }
 
+//通过state方式实现状态机
 class AuthorizationPresenter {
 
     private var state: AuthorizationState = Unauthorized()

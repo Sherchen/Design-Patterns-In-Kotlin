@@ -6,7 +6,7 @@ class NormalFile : File {
     override fun read(name: String) = println("Reading file: $name")
 }
 
-//Proxy:
+//Proxy: 代理模式
 class SecuredFile : File {
     val normalFile = NormalFile()
     var password: String = ""

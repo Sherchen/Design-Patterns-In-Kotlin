@@ -9,6 +9,7 @@ enum class Country {
     UnitedStates, Spain, UK, Greece
 }
 
+//工厂方法
 class CurrencyFactory {
     fun currencyForCountry(country: Country): Currency? {
         when (country) {
